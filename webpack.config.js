@@ -1,4 +1,5 @@
 var HtmlWebpackPlugin = require("html-webpack-plugin");
+var ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = {
   module: {
@@ -22,5 +23,6 @@ module.exports = {
       filename: "./index.html",
       hash: true,
     }),
+    new ESLintPlugin(),
   ],
 };
